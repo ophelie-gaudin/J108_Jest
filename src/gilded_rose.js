@@ -129,9 +129,11 @@ export class Shop {
     this.leftDays = leftDays;
   }
   updateQuality() {
+    // for(i=0; i <= this.leftDays; i++){
     this.items.map((item) => {
       item.looseSellIn();
     });
+    // }
 
     return this.items;
 
